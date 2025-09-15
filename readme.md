@@ -1,4 +1,6 @@
 🎬 Roadmap – Timeline de Edição de Vídeo
+
+
 📌 Fase 1 – Estrutura Básica
 
     🖼️ Criar Canvas da timeline com largura proporcional à duração do vídeo
