@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>VanVince</title>
+
 </head>
 
 <body>
-    <div id="root"></div>
-    <script src="./src/ferramentas/elementos/elemento.js" type="text/javascript" ></script>
+    <div id="root">
+        <div id="timeLineContainer">
+            <canvas id="timeLineCanvas"></canvas>
+        </div>
+    </div>
     <script src="./src/ferramentas/canvas/canvas.js" type="text/javascript" ></script>
+    <script src="./src/components/timeLine/canalProps.js" type="text/javascript" ></script>
+    <script src="./src/components/timeLine/canal.js" type="text/javascript" ></script>
     <script src="./src/components/timeLine/timeLine.js" type="text/javascript" ></script>
     <script src="app.js" type="text/javascript" ></script>
 </body>

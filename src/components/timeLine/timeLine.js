@@ -1,24 +1,23 @@
 class timeLine{
-    #elemento = new elemento();
-    #canvas = null;
     #width = 800;
     #height = 200;
+    #canais = [];
     constructor(width, height){
       this.#width = width;
       this.#height = height;
-      this.render();
+      this.#canais.push(new canal(this.#width, this.#height));
+    }
+   
+    update(){
+       
     }
 
-    render(){
-        const _canvas = window.document.createElement('canvas');
-        _canvas.width = this.#width;
-        _canvas.height = this.#height;
-        _canvas.style.border = '1px solid black';
-        this.#elemento.addElementoBody(_canvas);
-        const contexto = new canvas(this.#canvas).getContexto();
-        contexto.fillStyle = 'lightgray';
-        contexto.fillRect(0, 0, this.#canvas.width, this.#canvas.height);
-
-        
+    draw(contexto){
+        contexto.clearRect(0, 0, this.#width, this.#height);
+        contexto.fillStyle = '#575650';
+        contexto.fillRect(0, 0, this.#width, this.#height);
+        this.#canais.forEach(canal => {
+          canal.draw(contexto);
+        });
     }
 }
