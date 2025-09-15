@@ -1,77 +1,77 @@
 🎬 Roadmap – Timeline de Edição de Vídeo
 📌 Fase 1 – Estrutura Básica
 
- 🖼️ Criar Canvas da timeline com largura proporcional à duração do vídeo
+    🖼️ Criar Canvas da timeline com largura proporcional à duração do vídeo
 
- ⏱️ Implementar escala de tempo (segundos/minutos)
+    ⏱️ Implementar escala de tempo (segundos/minutos)
 
- 🎞️ Adicionar faixa principal de vídeo (track base)
+    🎞️ Adicionar faixa principal de vídeo (track base)
 
- 📍 Implementar playhead (linha vermelha da posição atual)
+    📍 Implementar playhead (linha vermelha da posição atual)
 
- 🔗 Sincronizar playhead com o player de preview
+    🔗 Sincronizar playhead com o player de preview
 
 📌 Fase 2 – Clips e Cortes
 
- 📦 Estrutura de dados para clipes (startTime, endTime)
+    📦 Estrutura de dados para clipes (startTime, endTime)
 
- 🎨 Renderizar clipes como blocos coloridos na faixa
+    🎨 Renderizar clipes como blocos coloridos na faixa
 
- 🖱️ Drag & Drop para mover clipes
+    🖱️ Drag & Drop para mover clipes
 
- ↔️ Resize handles para cortar início/fim dos clipes
+    ↔️ Resize handles para cortar início/fim dos clipes
 
- 🧲 Implementar snapping (alinhamento automático no tempo)
+    🧲 Implementar snapping (alinhamento automático no tempo)
 
 📌 Fase 3 – Interatividade Avançada
 
- 🔍 Zoom na timeline (scroll/pinch)
+    🔍 Zoom na timeline (scroll/pinch)
 
- ↔️ Scroll horizontal para vídeos longos
+    ↔️ Scroll horizontal para vídeos longos
 
- 📏 Marcadores de corte independentes (linhas verticais)
+    📏 Marcadores de corte independentes (linhas verticais)
 
- 💬 Tooltip de tempo ao passar o mouse
+    💬 Tooltip de tempo ao passar o mouse
 
 📌 Fase 4 – Visualização
 
- 🖼️ Miniaturas do vídeo ao longo da timeline
+    🖼️ Miniaturas do vídeo ao longo da timeline
 
- 🎵 Faixas separadas para vídeo e áudio
+    🎵 Faixas separadas para vídeo e áudio
 
- 🌊 Renderizar forma de onda (waveform) do áudio
+    🌊 Renderizar forma de onda (waveform) do áudio
 
- 🎨 Diferenciar por cores de mídia (vídeo, áudio, legendas)
+    🎨 Diferenciar por cores de mídia (vídeo, áudio, legendas)
 
 📌 Fase 5 – Usabilidade e UX
 
- ⌨️ Atalhos de teclado (espaço = play/pause, setas = mover playhead)
+    ⌨️ Atalhos de teclado (espaço = play/pause, setas = mover playhead)
 
- 🖥️ Zoom-to-fit (ajusta timeline para caber na tela)
+    🖥️ Zoom-to-fit (ajusta timeline para caber na tela)
 
- 🔄 Undo/Redo para ações de corte/movimento
+    🔄 Undo/Redo para ações de corte/movimento
 
- 🖱️ Multi-seleção de clipes (Shift+Click)
+    🖱️ Multi-seleção de clipes (Shift+Click)
 
 📌 Fase 6 – Integração
 
- 📤 Exportar cortes em JSON
+    📤 Exportar cortes em JSON
 
- 🌐 Enviar cortes para a API de processamento
+    🌐 Enviar cortes para a API de processamento
 
- 📥 Atualizar timeline com clipes processados
+    📥 Atualizar timeline com clipes processados
 
- 🎬 Preview em tempo real ao clicar na timeline
+    🎬 Preview em tempo real ao clicar na timeline
 
 📌 Fase 7 – Profissionalização
 
- 🎚️ Suporte a múltiplas tracks (vídeo, áudio, overlays)
+    🎚️ Suporte a múltiplas tracks (vídeo, áudio, overlays)
 
- 🪄 Camadas (ordem de exibição, clipe acima prevalece)
+    🪄 Camadas (ordem de exibição, clipe acima prevalece)
 
- 🎭 Transições (crossfade, corte seco)
+    🎭 Transições (crossfade, corte seco)
 
- 🎛️ Suporte a keyframes (volume, opacidade, posição)
+    🎛️ Suporte a keyframes (volume, opacidade, posição)
 
 
 ✨ Sugestão de uso:
