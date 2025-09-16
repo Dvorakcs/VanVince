@@ -6,7 +6,7 @@ class reguaTempo {
     #tempoTotal = 60;
     #pixelsPorSegundo = 5;
     #offset = 0;
-
+    #keys = false
     constructor(x, y, width, height) {
         this.#width = width;
         this.#height = height;
@@ -14,6 +14,8 @@ class reguaTempo {
         this.#y = y;
         this.#tempoTotal = width;
         window.addEventListener('wheel', (event) => this.scroll(event));
+        window.addEventListener('keydown', (event) => this.key(event,true));
+        window.addEventListener('keyup', (event) => this.key(event,false));
     }
 
     update() {}
@@ -57,8 +59,17 @@ class reguaTempo {
             this.onScroll();
         }
         this.#tempoTotal +=  this.#offset;
-    }
 
+        if(this.#keys && this.#pixelsPorSegundo > 0.1){
+            this.#pixelsPorSegundo -= event.deltaY > 0 ? 0.1: -0.1;
+        }
+    }
+    key(event, ativo){
+        
+        if(event.code == "KeyZ"){
+            this.#keys= ativo
+        }
+    }
     setOnScrollCallback(callback) {
         this.onScroll = callback;
     }
