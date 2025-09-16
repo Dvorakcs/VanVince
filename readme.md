@@ -3,9 +3,9 @@
 
 📌 Fase 1 – Estrutura Básica
 
-    🖼️ Criar Canvas da timeline com largura proporcional à duração do vídeo
+    ✅  🖼️ Criar Canvas da timeline com largura proporcional à duração do vídeo
 
-    ⏱️ Implementar escala de tempo (segundos/minutos)
+    🔜  ⏱️ Implementar escala de tempo (segundos/minutos)
 
     🎞️ Adicionar faixa principal de vídeo (track base)
 
