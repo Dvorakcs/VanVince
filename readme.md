@@ -9,9 +9,9 @@
 
     🔜  🎞️ Adicionar faixa principal de vídeo (track base)
 
-    📍 Implementar playhead (linha vermelha da posição atual)
+    🔜  📍 Implementar playhead (linha vermelha da posição atual)
 
-    🔗 Sincronizar playhead com o player de preview
+    🔜  🔗 Sincronizar playhead com o player de preview
 
 📌 Fase 2 – Clips e Cortes
 

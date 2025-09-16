@@ -6,7 +6,7 @@ class videoCanal{
     #y
     #timepoInicio = 20 * 5;
     #timepoFim = 40 * 5;
-
+    
     constructor(x, y, width, height, tipo){
         this.#width = width;
         this.#height = height;
