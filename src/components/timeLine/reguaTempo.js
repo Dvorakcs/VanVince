@@ -60,9 +60,13 @@ class reguaTempo {
         }
         this.#tempoTotal +=  this.#offset;
 
-        if(this.#keys && this.#pixelsPorSegundo > 0.1){
-            this.#pixelsPorSegundo -= event.deltaY > 0 ? 0.1: -0.1;
+        if(this.#keys && this.#pixelsPorSegundo > 4.0 && event.deltaY > 0){
+            
+            this.#pixelsPorSegundo -= 0.1;
+        }else if(this.#keys && event.deltaY < 0){
+            this.#pixelsPorSegundo += 0.1;
         }
+        console.log(this.#pixelsPorSegundo)
     }
     key(event, ativo){
         
