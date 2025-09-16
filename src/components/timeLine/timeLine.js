@@ -5,7 +5,8 @@ class timeLine{
     constructor(width, height){
       this.#width = width;
       this.#height = height;
-      this.#canais.push(new canal(this.#width, this.#height));
+      this.#canais.push(new canal(0,this.#height/2*this.#canais.length,this.#width, this.#height/2,'video'));
+      this.#canais.push(new canal(0,this.#height/2*this.#canais.length,this.#width , this.#height/2,'audio'));
     }
    
     update(){
