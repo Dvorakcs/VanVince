@@ -24,8 +24,11 @@ class  canalProps {
         contexto.fillRect(this.#x, this.#y, this.#width, this.#height);
         contexto.strokeStyle = '#919191ff';
         contexto.strokeRect(this.#x, this.#y, this.#width, this.#height);
-        contexto.fillStyle = '#131212ff';
-        contexto.fillText(this.#tipo, this.#x + this.#width/2 - 55, this.#y + this.#height/2);
+        contexto.fillStyle = '#ffffff';
+        contexto.font = '10px Arial';
+        contexto.textAlign = 'center';
+        contexto.textBaseline = 'top';
+        contexto.fillText(this.#tipo, this.#x + this.#width/2 - 55, this.#y + this.#height/2 - 4);
 
         this.#buttons.forEach(button => {
             button.draw(contexto);
