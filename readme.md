@@ -5,9 +5,9 @@
 
     ✅  🖼️ Criar Canvas da timeline com largura proporcional à duração do vídeo
 
-    🔜  ⏱️ Implementar escala de tempo (segundos/minutos)
+    ✅  ⏱️ Implementar escala de tempo (segundos/minutos)
 
-    🎞️ Adicionar faixa principal de vídeo (track base)
+    🔜  🎞️ Adicionar faixa principal de vídeo (track base)
 
     📍 Implementar playhead (linha vermelha da posição atual)
 
