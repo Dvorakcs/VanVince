@@ -15,7 +15,7 @@ class canal{
     }
 
     inicializarProps(){
-        this.#props.push(new canalProps(this.#x,this.#y,155,this.#height,this.#tipo));
+        this.#props.push(new canalProps(this.#x,this.#y,155,this.#height ,this.#tipo));
     }
     draw(contexto){
 

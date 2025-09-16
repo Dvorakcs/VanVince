@@ -14,10 +14,9 @@ function draw(){
     _timeLine.draw(canvasTimeLine.getContexto());
 }
 window.addEventListener('load', () => { 
-     canvasTimeLine = new canvas(document.getElementById('timeLineCanvas'),{width: width * scale, height: 75 * scale});
-     _timeLine = new timeLine(width * scale, 75 * scale);
+     canvasTimeLine = new canvas(document.getElementById('timeLineCanvas'),{width: width - 1 * scale, height: 85 * scale});
+     _timeLine = new timeLine(width - 1 *scale, 75 * scale);
      update();
 });
-
 
 
