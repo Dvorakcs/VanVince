@@ -14,10 +14,10 @@ class timeLine{
       
     }
    
-    update(){
-      this.#reguaTempo.update(); 
+    update(props){
+      this.#reguaTempo.update(props); 
       this.#canais.forEach(canal => {
-        canal.update();
+        canal.update(props);
       });
     }
 
@@ -29,7 +29,11 @@ class timeLine{
         this.#reguaTempo.draw(contexto);
        
         this.#canais.forEach(canal => {
-          canal.draw(contexto);
+          canal.draw({
+            contexto: contexto,
+            offset: this.#reguaTempo.getOffset(),
+            zoom: this.#reguaTempo.getZoom()
+          });
         });
 
         

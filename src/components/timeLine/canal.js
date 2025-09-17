@@ -12,26 +12,26 @@ class canal{
         this.#tipo = tipo;
         this.#x = x;
         this.#y = y;
-        this.#videoCanal.push(new videoCanal(30* 5,this.#y,this.#width, this.#height));
+        this.#videoCanal.push(new videoCanal(155,this.#y,this.#width, this.#height));
         this.inicializarProps();
     }
 
-    update(){
-        this.#videoCanal.forEach(canal => {
-            canal.update();
+    update(props){
+        this.#videoCanal.forEach(video => {
+            video.update(props);
           });
     }   
     inicializarProps(){
         this.#props.push(new canalProps(this.#x,this.#y,155,this.#height ,this.#tipo));
     }
-    draw(contexto){
-
+    draw(props){
+        const contexto = props.contexto;
         contexto.fillStyle = '#333333ff';
         contexto.fillRect(this.#x, this.#y, this.#width, this.#height);
         contexto.strokeStyle = '#919191ff';
         contexto.strokeRect(this.#x, this.#y, this.#width, this.#height);
          this.#videoCanal.forEach(canal => {
-          canal.draw(contexto);
+          canal.draw(props);
         });
         
         this.#props.forEach(prop => {

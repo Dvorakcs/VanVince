@@ -18,7 +18,16 @@ class reguaTempo {
         window.addEventListener('keyup', (event) => this.key(event,false));
     }
 
-    update() {}
+    getOffset() {
+        return this.#offset;
+    }
+    getZoom() {
+        return this.#pixelsPorSegundo;
+    }
+    update(props) {
+
+
+    }
 
     draw(contexto) {
         contexto.fillStyle = '#777777ff';
@@ -51,6 +60,7 @@ class reguaTempo {
         const scrollSpeed = 20;
         this.#offset += event.deltaY > 0 ? scrollSpeed : -scrollSpeed;
         
+
         if (this.#offset < 0) {
             this.#offset = 0;
         }
@@ -58,14 +68,17 @@ class reguaTempo {
         if (typeof this.onScroll === 'function') {
             this.onScroll();
         }
-        this.#tempoTotal +=  this.#offset;
-
-        if(this.#keys && this.#pixelsPorSegundo > 4.0 && event.deltaY > 0){
+         if(this.#keys && this.#pixelsPorSegundo > 4.0 && event.deltaY > 0){
             
             this.#pixelsPorSegundo -= 0.1;
+            return;
         }else if(this.#keys && event.deltaY < 0){
             this.#pixelsPorSegundo += 0.1;
+            return;
         }
+        this.#tempoTotal +=  this.#offset;
+
+       
         console.log(this.#pixelsPorSegundo)
     }
     key(event, ativo){
